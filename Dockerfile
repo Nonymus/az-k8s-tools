@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/azure-cli:2.30.0
+FROM mcr.microsoft.com/azure-cli:2.33.1
 RUN az aks install-cli
 ARG HELM_VERSION=3.7.0
 RUN curl -L https://get.helm.sh/helm-v3.8.0-linux-amd64.tar.gz | tar xz && \
