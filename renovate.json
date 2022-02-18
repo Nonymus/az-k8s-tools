@@ -1,5 +1,13 @@
 {
   "extends": [
     "config:base"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ARG HELM_VERSION=(?<currentVal>.*?)\\n"],
+      "depNameTemplate": "helm/helm",
+      "datasourceTeamplte": "github-releases"
+    }
   ]
 }
