@@ -5,7 +5,7 @@
   "regexManagers": [
     {
       "fileMatch": ["^Dockerfile$"],
-      "matchStrings": ["ARG HELM_VERSION=(?<currentVal>.*?)\\n"],
+      "matchStrings": ["ARG HELM_VERSION=(?<currentValue>.*?)\\n"],
       "depNameTemplate": "helm/helm",
       "datasourceTemplate": "github-releases"
     }
